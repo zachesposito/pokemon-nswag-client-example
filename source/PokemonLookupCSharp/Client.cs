@@ -342,6 +342,9 @@ namespace PokemonLookupCSharp
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? Id { get; set; }
     
+        [Newtonsoft.Json.JsonProperty("moves", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<Move> Moves { get; set; }
+    
         [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Name { get; set; }
     
@@ -365,6 +368,27 @@ namespace PokemonLookupCSharp
         public static Pokemon FromJson(string data)
         {
             return Newtonsoft.Json.JsonConvert.DeserializeObject<Pokemon>(data);
+        }
+    
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "9.13.17.0 (Newtonsoft.Json v9.0.0.0)")]
+    public partial class Move 
+    {
+        [Newtonsoft.Json.JsonProperty("move", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public ResourceReference Move1 { get; set; }
+    
+        [Newtonsoft.Json.JsonProperty("version_group_details", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<VersionGroupDetail> Version_group_details { get; set; }
+    
+        public string ToJson() 
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(this);
+        }
+    
+        public static Move FromJson(string data)
+        {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<Move>(data);
         }
     
     }
@@ -428,6 +452,30 @@ namespace PokemonLookupCSharp
         public static PokemonType FromJson(string data)
         {
             return Newtonsoft.Json.JsonConvert.DeserializeObject<PokemonType>(data);
+        }
+    
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "9.13.17.0 (Newtonsoft.Json v9.0.0.0)")]
+    public partial class VersionGroupDetail 
+    {
+        [Newtonsoft.Json.JsonProperty("level_learned_at", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? Level_learned_at { get; set; }
+    
+        [Newtonsoft.Json.JsonProperty("move_learn_method", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public ResourceReference Move_learn_method { get; set; }
+    
+        [Newtonsoft.Json.JsonProperty("version_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public ResourceReference Version_group { get; set; }
+    
+        public string ToJson() 
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(this);
+        }
+    
+        public static VersionGroupDetail FromJson(string data)
+        {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<VersionGroupDetail>(data);
         }
     
     }

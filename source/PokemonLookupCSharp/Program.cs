@@ -28,6 +28,11 @@ namespace PokemonLookupCSharp
             {
                 Console.WriteLine($"  {stat.Stat1.Name}: {stat.Base_stat}");
             }
+            Console.WriteLine($"Moves:");
+            foreach (var move in pokemon.Moves.Where(m => m.Version_group_details.Any(d => d.Move_learn_method.Name == "level-up")).Take(5))
+            {
+                Console.WriteLine($"  {move.Move1.Name}");
+            }
         }
 
         public static async Task<Pokemon> GetRandomPokemon()
