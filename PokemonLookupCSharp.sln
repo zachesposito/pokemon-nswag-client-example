@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonLookupCSharp", "source\PokemonLookupCSharp\PokemonLookupCSharp.csproj", "{025CA75A-2F3E-49C5-9F88-E1009959331C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonLookupCSharp.ClientGenerator", "source\PokemonLookupCSharp.ClientGenerator\PokemonLookupCSharp.ClientGenerator.csproj", "{9DA9B900-64D6-489B-9CE9-0EEFBBB9E6B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{025CA75A-2F3E-49C5-9F88-E1009959331C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025CA75A-2F3E-49C5-9F88-E1009959331C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025CA75A-2F3E-49C5-9F88-E1009959331C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025CA75A-2F3E-49C5-9F88-E1009959331C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA9B900-64D6-489B-9CE9-0EEFBBB9E6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA9B900-64D6-489B-9CE9-0EEFBBB9E6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA9B900-64D6-489B-9CE9-0EEFBBB9E6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA9B900-64D6-489B-9CE9-0EEFBBB9E6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD574286-F00E-4187-B97E-9DCB333DA78C}
+	EndGlobalSection
+EndGlobal
